@@ -10,7 +10,7 @@ end
 
 def long_planeteer_calls(calls)# code an argument here
   # Your code here
-  calls.max_by{|c| c.length > 4} > 4
+  calls.max_by{|c| c.length > 4}.length > 4
 end
 
 def find_the_cheese# code an argument here
