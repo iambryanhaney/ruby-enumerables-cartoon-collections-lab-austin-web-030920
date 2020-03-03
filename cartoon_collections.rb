@@ -5,13 +5,13 @@ end
 
 def summon_captain_planet(calls)# code an argument here
   # Your code here
-  calls.map{|c| c.capitalize!}
+  calls.map{|c| "#{c.capitalize!}!"}
 end
 
 def long_planeteer_calls(calls)# code an argument here
   # Your code here
   # calls.reduce(true){|memo, call| memo && (call.length <= 4)}
-  calls.min_by{|c| c.length} > 4
+  calls.min_by{|c| c.length}.length < 4
 end
 
 def find_the_cheese(foods)# code an argument here
